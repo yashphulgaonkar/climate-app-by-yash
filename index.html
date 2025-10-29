@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate App by Yash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🌤️ Climate App by Yash</h1>
+            <p>Check the live weather of any city instantly</p>
+        </header>
+        
+        <div class="content">
+            <!-- Left column: input + info -->
+            <div class="left-column">
+                <div class="search-box">
+                    <input type="text" id="cityInput" placeholder="Enter city name">
+                    <button id="searchBtn">Search</button>
+                    <button id="locationBtn">Use My Location</button>
+                </div>
+                
+                <div id="weatherInfo">
+                    <h2 id="cityName"></h2>
+                    <p id="temperature"></p>
+                    <p id="conditions"></p>
+                    <p id="humidity"></p>
+                    <p id="wind"></p>
+                </div>
+            </div>
+            
+            <!-- Right column: 5-day forecast -->
+            <div class="right-column">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast"></div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Built by Yash Phulgaonkar 🌤️</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
